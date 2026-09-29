@@ -163,3 +163,6 @@ footer { padding: 25px 0; border-top: 1px solid var(--line); }
 /* Real photos inside placeholder boxes */
 .photo-placeholder.has-photo { padding: 0; overflow: hidden; border: 0; background: #dcebf3; }
 .photo-placeholder.has-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.gallery-grid { grid-template-columns: 1fr; }
+.gallery-grid .gallery-large { height: 360px; }
+@media (max-width: 800px) { .gallery-grid { grid-template-columns: 1fr; } .gallery-grid .gallery-large { height: 220px; } }
